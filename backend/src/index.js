@@ -106,21 +106,7 @@ app.put('/repositories/:id', (request, response) => {
 
 });
 
-app.delete('/projects/:id', (request, response) => {
-    
-    /*const { id } = request.params;
-
-    const projectIndex = projects.findIndex(project => project.id === id);
-
-    if(projectIndex <0){
-        return response.status(400).json({error: 'Project not found'});
-    }
-
-    projects.splice(projectIndex,1);
-
-
-    return response.status(204).send();*/
-
+app.delete('/repositories/:id', (request, response) => {
   const { id } = request.params;
 
   const repositoryIndex = repositories.findIndex(repository => repository.id === id);
